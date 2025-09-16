@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Rive Animation Embed</title>
+    <script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
+    <style>
+      body { margin:0; }
+      canvas { display:block; }
+    </style>
+  </head>
+  <body>
+    <canvas id="rive-canvas" width="500" height="500"></canvas>
+    <script>
+      new rive.Rive({
+        src: "https://raw.githubusercontent.com/katesundragon-design/work-please/main/empty_states_steps%20(1).riv",
+        canvas: document.getElementById("rive-canvas"),
+        autoplay: true
+      });
+    </script>
+  </body>
+</html>
